@@ -6,7 +6,7 @@ const buildings = [
     BuildingLongName: "Administration Building",
     Address: "7141, Sherbrooke West",
     Latitude: 45.457984,
-    Longitude: "-73.639834",
+    Longitude: -73.639834,
   },
   {
     Campus: "SGW",
@@ -15,7 +15,7 @@ const buildings = [
     BuildingLongName: "B Annex",
     Address: "2160 Bishop Street",
     Latitude: 45.497856,
-    Longitude: "-73.579588",
+    Longitude: -73.579588,
   },
   {
     Campus: "LOY",
@@ -24,7 +24,7 @@ const buildings = [
     BuildingLongName: "BB-BH Annex",
     Address: "3502 Bermore Avenue",
     Latitude: 45.459793,
-    Longitude: "-73.639174",
+    Longitude: -73.639174,
   },
   {
     Campus: "LOY",
@@ -33,7 +33,7 @@ const buildings = [
     BuildingLongName: "BB-BH Annex",
     Address: "3500 Bermore Avenue",
     Latitude: 45.459819,
-    Longitude: "-73.639152",
+    Longitude: -73.639152,
   },
   {
     Campus: "LOY",
@@ -42,7 +42,7 @@ const buildings = [
     BuildingLongName: "Central Building",
     Address: "7141 Sherbrooke West",
     Latitude: 45.458204,
-    Longitude: "-73.640300",
+    Longitude: -73.640300,
   },
   {
     Campus: "SGW",
@@ -51,7 +51,7 @@ const buildings = [
     BuildingLongName: "CI Annex",
     Address: "2149 Mackay Street",
     Latitude: 45.497467,
-    Longitude: "-73.579925",
+    Longitude: -73.579925,
   },
   {
     Campus: "LOY",
@@ -60,7 +60,7 @@ const buildings = [
     BuildingLongName: "Communication Studies and Journalism Building",
     Address: "7141, Sherbrooke Wes",
     Latitude: 45.457478,
-    Longitude: "-73.640354",
+    Longitude: -73.640354,
   },
   {
     Campus: "LOY",
@@ -69,7 +69,7 @@ const buildings = [
     BuildingLongName: "Communication Studies and Journalism Building",
     Address: "7141, Sherbrooke Wes",
     Latitude: 45.457478,
-    Longitude: "-73.640354",
+    Longitude: -73.640354,
   },
   {
     Campus: "LOY",
@@ -78,7 +78,7 @@ const buildings = [
     BuildingLongName: "Communication Studies and Journalism Building",
     Address: "7141, Sherbrooke Wes",
     Latitude: 45.457478,
-    Longitude: "-73.640354",
+    Longitude: -73.640354,
   },
   {
     Campus: "SGW",
@@ -87,7 +87,7 @@ const buildings = [
     BuildingLongName: "CL Annex",
     Address: "1665 Ste-Catherine W",
     Latitude: 45.494259,
-    Longitude: "-73.579007",
+    Longitude: -73.579007,
   },
   {
     Campus: "SGW",
@@ -96,7 +96,7 @@ const buildings = [
     BuildingLongName: "D Annex",
     Address: "2140 Bishop Street",
     Latitude: 45.497827,
-    Longitude: "-73.579409",
+    Longitude: -73.579409,
   },
   {
     Campus: "SGW",
@@ -105,7 +105,7 @@ const buildings = [
     BuildingLongName: "EN Annex",
     Address: "2070 Mackay Street",
     Latitude: 45.496944,
-    Longitude: "-73.579555",
+    Longitude: -73.579555,
   },
   {
     Campus: "SGW",
@@ -114,7 +114,7 @@ const buildings = [
     BuildingLongName: "ER Building",
     Address: "2155 Guy Street",
     Latitude: 45.496428,
-    Longitude: "-73.579990",
+    Longitude: -73.579990,
   },
   {
     Campus: "SGW",
@@ -123,7 +123,7 @@ const buildings = [
     BuildingLongName: "ES Building",
     Address: "2135 Guy Street",
     Latitude: 45.496172,
-    Longitude: "-73.579922",
+    Longitude: -73.579922,
   },
   {
     Campus: "SGW",
@@ -132,7 +132,7 @@ const buildings = [
     BuildingLongName: "ET Building",
     Address: "2125-2127 Guy Street",
     Latitude: 45.496163,
-    Longitude: "-73.579904",
+    Longitude: -73.579904,
   },
   {
     Campus: "SGW",
@@ -141,7 +141,7 @@ const buildings = [
     BuildingLongName: "Engineering, Computer Science and Visual Arts Integrated Complex",
     Address: "1515 Ste-Catherine W",
     Latitude: 45.495376,
-    Longitude: "-73.577997",
+    Longitude: -73.577997,
   },
   {
     Campus: "SGW",
@@ -150,7 +150,7 @@ const buildings = [
     BuildingLongName: "FA Annex",
     Address: "2060 Mackay Street",
     Latitude: 45.496874,
-    Longitude: "-73.579468",
+    Longitude: -73.579468,
   },
   {
     Campus: "SGW",
@@ -159,7 +159,7 @@ const buildings = [
     BuildingLongName: "Faubourg Building",
     Address: "1250 Guy Street",
     Latitude: 45.494666,
-    Longitude: "-73.577603",
+    Longitude: -73.577603,
   },
   {
     Campus: "LOY",
@@ -168,7 +168,7 @@ const buildings = [
     BuildingLongName: "F.C. Smith Building",
     Address: "7141 Sherbrooke West",
     Latitude: 45.458493,
-    Longitude: "-73.639287",
+    Longitude: -73.639287,
   },
   {
     Campus: "SGW",
@@ -177,7 +177,7 @@ const buildings = [
     BuildingLongName: "Faubourg Ste-Catherine Building",
     Address: "1610 Ste-Catherine",
     Latitude: 45.494381,
-    Longitude: "-73.578425",
+    Longitude: -73.578425,
   },
   {
     Campus: "SGW",
@@ -186,7 +186,7 @@ const buildings = [
     BuildingLongName: "Grey Nuns Annex",
     Address: "1211-1215 St-Mathieu",
     Latitude: 45.494123,
-    Longitude: "-73.577870",
+    Longitude: -73.577870,
   },
   {
     Campus: "LOY",
@@ -195,7 +195,7 @@ const buildings = [
     BuildingLongName: "Centre for Structural and Functional Genomics",
     Address: "7141 Sherbrooke W",
     Latitude: 45.457017,
-    Longitude: "-73.640432",
+    Longitude: -73.640432,
   },
   {
     Campus: "SGW",
@@ -204,7 +204,7 @@ const buildings = [
     BuildingLongName: "Guy-De Maisonneuve Building",
     Address: "1550 DeMaisonneuve W",
     Latitude: 45.495983,
-    Longitude: "-73.578824",
+    Longitude: -73.578824,
   },
   {
     Campus: "SGW",
@@ -213,7 +213,7 @@ const buildings = [
     BuildingLongName: "Grey Nuns Building",
     Address: "1190 Guy Street",
     Latitude: 45.493622,
-    Longitude: "-73.577003",
+    Longitude: -73.577003,
   },
   {
     Campus: "SGW",
@@ -222,7 +222,7 @@ const buildings = [
     BuildingLongName: "Grey Nuns Building",
     Address: "1190 Guy Street",
     Latitude: 45.493622,
-    Longitude: "-73.577003",
+    Longitude: -73.577003,
   },
   {
     Campus: "SGW",
@@ -231,7 +231,7 @@ const buildings = [
     BuildingLongName: "Grey Nuns Building",
     Address: "1190 Guy Street",
     Latitude: 45.493622,
-    Longitude: "-73.577003",
+    Longitude: -73.577003,
   },
   {
     Campus: "SGW",
@@ -240,7 +240,7 @@ const buildings = [
     BuildingLongName: "Grey Nuns Building",
     Address: "1190 Guy Street",
     Latitude: 45.493622,
-    Longitude: "-73.577003",
+    Longitude: -73.577003,
   },
   {
     Campus: "SGW",
@@ -249,7 +249,7 @@ const buildings = [
     BuildingLongName: "Guy-Sherbrooke Building",
     Address: "1538, Sherbrooke W",
     Latitude: 45.496673,
-    Longitude: "-73.581409",
+    Longitude: -73.581409,
   },
   {
     Campus: "SGW",
@@ -258,7 +258,7 @@ const buildings = [
     BuildingLongName: "Henry F. Hall Building",
     Address: "1455 DeMaisonneuve W",
     Latitude: 45.497092,
-    Longitude: "-73.578800",
+    Longitude: -73.578800,
   },
   {
     Campus: "LOY",
@@ -267,7 +267,7 @@ const buildings = [
     BuildingLongName: "Hingston Hall, wing HA",
     Address: "7141 Sherbrooke West",
     Latitude: 45.459356,
-    Longitude: "-73.641270",
+    Longitude: -73.641270,
   },
   {
     Campus: "LOY",
@@ -276,7 +276,7 @@ const buildings = [
     BuildingLongName: "Hingston Hall, wing HB",
     Address: "7141 Sherbrooke West",
     Latitude: 45.459308,
-    Longitude: "-73.641849",
+    Longitude: -73.641849,
   },
   {
     Campus: "LOY",
@@ -285,7 +285,7 @@ const buildings = [
     BuildingLongName: "Hingston Hall, wing HC",
     Address: "7141 Sherbrooke West",
     Latitude: 45.459663,
-    Longitude: "-73.642080",
+    Longitude: -73.642080,
   },
   {
     Campus: "LOY",
@@ -294,7 +294,7 @@ const buildings = [
     BuildingLongName: "Applied Science Hub",
     Address: "7141, Sherbrooke W",
     Latitude: 45.458513,
-    Longitude: "-73.641921",
+    Longitude: -73.641921,
   },
   {
     Campus: "LOY",
@@ -303,7 +303,7 @@ const buildings = [
     BuildingLongName: "Jesuit Residence",
     Address: "7141 Sherbrooke West",
     Latitude: 45.458432,
-    Longitude: "-73.643235",
+    Longitude: -73.643235,
   },
   {
     Campus: "SGW",
@@ -312,7 +312,7 @@ const buildings = [
     BuildingLongName: "K Annex",
     Address: "2150 Bishop Street",
     Latitude: 45.497777,
-    Longitude: "-73.579531",
+    Longitude: -73.579531,
   },
   {
     Campus: "SGW",
@@ -321,7 +321,7 @@ const buildings = [
     BuildingLongName: "J.W. McConnell Building",
     Address: "1400 DeMaisonneuve W",
     Latitude: 45.497050,
-    Longitude: "-73.578009",
+    Longitude: -73.578009,
   },
   {
     Campus: "SGW",
@@ -330,7 +330,7 @@ const buildings = [
     BuildingLongName: "LC Building",
     Address: "1426 Bishop Street",
     Latitude: 45.496782,
-    Longitude: "-73.577358",
+    Longitude: -73.577358,
   },
   {
     Campus: "SGW",
@@ -339,7 +339,7 @@ const buildings = [
     BuildingLongName: "LD Building",
     Address: "1424 Bishop Street",
     Latitude: 45.496697,
-    Longitude: "-73.577312",
+    Longitude: -73.577312,
   },
   {
     Campus: "SGW",
@@ -348,7 +348,7 @@ const buildings = [
     BuildingLongName: "M Annex",
     Address: "2135 Mackay Street",
     Latitude: 45.497368,
-    Longitude: "-73.579777",
+    Longitude: -73.579777,
   },
   {
     Campus: "SGW",
@@ -357,7 +357,7 @@ const buildings = [
     BuildingLongName: "John Molson Building",
     Address: "1450 Guy Street",
     Latitude: 45.495304,
-    Longitude: "-73.579044",
+    Longitude: -73.579044,
   },
   {
     Campus: "SGW",
@@ -366,7 +366,7 @@ const buildings = [
     BuildingLongName: "MI Annex",
     Address: "2130 Bishop Street",
     Latitude: 45.497807,
-    Longitude: "-73.579261",
+    Longitude: -73.579261,
   },
   {
     Campus: "SGW",
@@ -375,7 +375,7 @@ const buildings = [
     BuildingLongName: "MK Annex",
     Address: "2000-20002 Mackay St",
     Latitude: 45.496606,
-    Longitude: "-73.579025",
+    Longitude: -73.579025,
   },
   {
     Campus: "SGW",
@@ -384,7 +384,7 @@ const buildings = [
     BuildingLongName: "MM Annex",
     Address: "1209 Guy Street",
     Latitude: 45.494665,
-    Longitude: "-73.576365",
+    Longitude: -73.576365,
   },
   {
     Campus: "SGW",
@@ -393,7 +393,7 @@ const buildings = [
     BuildingLongName: "MN Annex",
     Address: "1205-1207 Guy Street",
     Latitude: 45.494568,
-    Longitude: "-73.576315",
+    Longitude: -73.576315,
   },
   {
     Campus: "SGW",
@@ -402,7 +402,7 @@ const buildings = [
     BuildingLongName: "Montefiore Building",
     Address: "1195 Guy Street",
     Latitude: 45.494442,
-    Longitude: "-73.576108",
+    Longitude: -73.576108,
   },
   {
     Campus: "SGW",
@@ -411,7 +411,7 @@ const buildings = [
     BuildingLongName: "MU Annex",
     Address: "2170 Bishop Street",
     Latitude: 45.497963,
-    Longitude: "-73.579506",
+    Longitude: -73.579506,
   },
   {
     Campus: "SGW",
@@ -420,7 +420,7 @@ const buildings = [
     BuildingLongName: "P Annex",
     Address: "2020 Mackay Street",
     Latitude: 45.496745,
-    Longitude: "-73.579113",
+    Longitude: -73.579113,
   },
   {
     Campus: "LOY",
@@ -429,7 +429,7 @@ const buildings = [
     BuildingLongName: "PB Building",
     Address: "7200 Sherbrooke W",
     Latitude: 45.456534,
-    Longitude: "-73.638106",
+    Longitude: -73.638106,
   },
   {
     Campus: "LOY",
@@ -438,7 +438,7 @@ const buildings = [
     BuildingLongName: "PERFORM centre",
     Address: "7200 Sherbrooke W",
     Latitude: 45.457088,
-    Longitude: "-73.637683",
+    Longitude: -73.637683,
   },
   {
     Campus: "SGW",
@@ -447,7 +447,7 @@ const buildings = [
     BuildingLongName: "PR Annex",
     Address: "2100 Mackay Street",
     Latitude: 45.497066,
-    Longitude: "-73.579790",
+    Longitude: -73.579790,
   },
   {
     Campus: "LOY",
@@ -456,7 +456,7 @@ const buildings = [
     BuildingLongName: "Physical Services Building",
     Address: "7141 Sherbrooke W",
     Latitude: 45.459636,
-    Longitude: "-73.639758",
+    Longitude: -73.639758,
   },
   {
     Campus: "LOY",
@@ -465,7 +465,7 @@ const buildings = [
     BuildingLongName: "Oscar Peterson Concert Hall",
     Address: "7141 Sherbrooke W",
     Latitude: 45.459308,
-    Longitude: "-73.638941",
+    Longitude: -73.638941,
   },
   {
     Campus: "LOY",
@@ -474,7 +474,7 @@ const buildings = [
     BuildingLongName: "Psychology Building",
     Address: "7141 Sherbrooke W",
     Latitude: 45.458938,
-    Longitude: "-73.640467",
+    Longitude: -73.640467,
   },
   {
     Campus: "SGW",
@@ -483,7 +483,7 @@ const buildings = [
     BuildingLongName: "Q Annex",
     Address: "2010 Mackay Street",
     Latitude: 45.496648,
-    Longitude: "-73.579094",
+    Longitude: -73.579094,
   },
   {
     Campus: "SGW",
@@ -492,7 +492,7 @@ const buildings = [
     BuildingLongName: "R Annex",
     Address: "2050 Mackay Street",
     Latitude: 45.496826,
-    Longitude: "-73.579389",
+    Longitude: -73.579389,
   },
   {
     Campus: "LOY",
@@ -501,7 +501,7 @@ const buildings = [
     BuildingLongName: "Recreation and Athletics Complex",
     Address: "7200 Sherbrooke W",
     Latitude: 45.456774,
-    Longitude: "-73.637610",
+    Longitude: -73.637610,
   },
   {
     Campus: "LOY",
@@ -510,7 +510,7 @@ const buildings = [
     BuildingLongName: "Loyola Jesuit Hall and Conference Centre",
     Address: "7141 Sherbrooke W",
     Latitude: 45.458489,
-    Longitude: "-73.641028",
+    Longitude: -73.641028,
   },
   {
     Campus: "SGW",
@@ -519,7 +519,7 @@ const buildings = [
     BuildingLongName: "RR Annex",
     Address: "2040 Mackay Street",
     Latitude: 45.496796,
-    Longitude: "-73.579259",
+    Longitude: -73.579259,
   },
   {
     Campus: "SGW",
@@ -528,7 +528,7 @@ const buildings = [
     BuildingLongName: "S Annex",
     Address: "2145 Mackay Street",
     Latitude: 45.497423,
-    Longitude: "-73.579851",
+    Longitude: -73.579851,
   },
   {
     Campus: "SGW",
@@ -537,7 +537,7 @@ const buildings = [
     BuildingLongName: "Samuel Bronfman Building",
     Address: "1590 Doctor Penfield",
     Latitude: 45.496600,
-    Longitude: "-73.586090",
+    Longitude: -73.586090,
   },
   {
     Campus: "LOY",
@@ -546,7 +546,7 @@ const buildings = [
     BuildingLongName: "Student Centre",
     Address: "7141 Sherbrooke W",
     Latitude: 45.459131,
-    Longitude: "-73.639251",
+    Longitude: -73.639251,
   },
   {
     Campus: "LOY",
@@ -555,7 +555,7 @@ const buildings = [
     BuildingLongName: "Solar House",
     Address: "7141 Sherbrooke W",
     Latitude: 45.459298,
-    Longitude: "-73.642478",
+    Longitude: -73.642478,
   },
   {
     Campus: "LOY",
@@ -564,7 +564,7 @@ const buildings = [
     BuildingLongName: "Richard J. Renaud Science Complex",
     Address: "7141 Sherbrooke W",
     Latitude: 45.457881,
-    Longitude: "-73.641565",
+    Longitude: -73.641565,
   },
   {
     Campus: "SGW",
@@ -573,7 +573,7 @@ const buildings = [
     BuildingLongName: "T Annex",
     Address: "2030 Mackay Street",
     Latitude: 45.496710,
-    Longitude: "-73.579270",
+    Longitude: -73.579270,
   },
   {
     Campus: "LOY",
@@ -582,7 +582,7 @@ const buildings = [
     BuildingLongName: "Terrebonne Building",
     Address: "7079 Terrebonne",
     Latitude: 45.459992,
-    Longitude: "-73.640897",
+    Longitude: -73.640897,
   },
   {
     Campus: "LOY",
@@ -591,7 +591,7 @@ const buildings = [
     BuildingLongName: "TB Annex",
     Address: "7075 Terrebonne",
     Latitude: 45.460051,
-    Longitude: "-73.640842",
+    Longitude: -73.640842,
   },
   {
     Campus: "SGW",
@@ -600,7 +600,7 @@ const buildings = [
     BuildingLongName: "Toronto-Dominion Building",
     Address: "1410 Guy Street",
     Latitude: 45.495103,
-    Longitude: "-73.578375",
+    Longitude: -73.578375,
   },
   {
     Campus: "SGW",
@@ -609,7 +609,7 @@ const buildings = [
     BuildingLongName: "TU Tunnel",
     Address: "1550 DeMaisonneuve",
     Latitude: 45.496480,
-    Longitude: "-73.578918",
+    Longitude: -73.578918,
   },
   {
     Campus: "SGW",
@@ -618,7 +618,7 @@ const buildings = [
     BuildingLongName: "V Annex",
     Address: "2110 Mackay Street",
     Latitude: 45.497101,
-    Longitude: "-73.579907",
+    Longitude: -73.579907,
   },
   {
     Campus: "SGW",
@@ -627,7 +627,7 @@ const buildings = [
     BuildingLongName: "Visual Arts Building",
     Address: "1395 Rene Levesque W",
     Latitude: 45.495543,
-    Longitude: "-73.573795",
+    Longitude: -73.573795,
   },
   {
     Campus: "LOY",
@@ -636,7 +636,7 @@ const buildings = [
     BuildingLongName: "Vanier Extension",
     Address: "7141 Sherbrooke W",
     Latitude: 45.459026,
-    Longitude: "-73.638606",
+    Longitude: -73.638606,
   },
   {
     Campus: "LOY",
@@ -645,7 +645,7 @@ const buildings = [
     BuildingLongName: "Vanier Library Building",
     Address: "7141 Sherbrooke W",
     Latitude: 45.459026,
-    Longitude: "-73.638606",
+    Longitude: -73.638606,
   },
   {
     Campus: "SGW",
@@ -654,7 +654,7 @@ const buildings = [
     BuildingLongName: "X Annex",
     Address: "2080 Mackay Street",
     Latitude: 45.496940,
-    Longitude: "-73.579593",
+    Longitude: -73.579593,
   },
   {
     Campus: "SGW",
@@ -663,7 +663,7 @@ const buildings = [
     BuildingLongName: "Z Annex",
     Address: "2090 Mackay Street",
     Latitude: 45.496981,
-    Longitude: "-73.579705",
+    Longitude: -73.579705,
   },
 ];
 
