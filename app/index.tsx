@@ -1,6 +1,6 @@
 import React from 'react';
 import { Alert, StyleSheet, View } from 'react-native';
-import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
+import MapView, { Geojson, Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 import buildings from '@/assets/Buildings/BuildingsMarkers';
 import floorPlan from '@/assets/FloorPlan/floorplan.json';
 
@@ -8,8 +8,8 @@ import floorPlan from '@/assets/FloorPlan/floorplan.json';
 const SGW_BUILDING={
   latitude: 45.497092, 
   longitude: -73.578800, 
-  latitudeDelta: 2, 
-  longitudeDelta: 2,
+  latitudeDelta: 0.05, 
+  longitudeDelta: 0.05,
 }
 
 export default function App() {
@@ -34,6 +34,12 @@ export default function App() {
             // onPress={() => onMarkerSelected(building)}
           />
         ))}
+          {/* <Geojson
+          geojson={floorPlan}
+          strokeColor="blue"
+          fillColor="rgba(0, 0, 255, 0.3)" 
+          strokeWidth={3} 
+        /> */}
       </MapView>
     </View>
   );
