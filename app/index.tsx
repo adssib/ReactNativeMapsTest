@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
-import { Dimensions, StyleSheet, TextInput, TouchableOpacity, View, Text } from 'react-native';
+import React, { useRef, useState } from 'react';
+import MapView, { LatLng, Marker, PROVIDER_GOOGLE } from 'react-native-maps';
+import { Dimensions, StyleSheet, TextInput, TouchableOpacity, View, Text, Keyboard } from 'react-native';
 import { GOOGLE_MAPS_API_KEY } from '../constants/GoogleKey';
 
 const { width, height } = Dimensions.get("window");
@@ -19,7 +19,9 @@ const INITIAL_POS = {
 
 export default function App() {
   const [searchText, setSearchText] = useState(''); // State to store input text
-
+  const [results, setResults] = useState<any[]>([]);
+  const map = useRef<MapView | null>(null) 
+  
   const searchPlaces = async () => {
     if (!searchText.trim().length) {
       console.log("Search text is empty.");
@@ -44,10 +46,28 @@ export default function App() {
       const json = await response.json();
       console.log("API Response:", json); // Logs the JSON data to the console
   
-      if (json.results) {
-        console.log("Places Found:", json.results);
-      } else {
-        console.log("No results found in the response.");
+      if (json && json.results) {
+        const coords: LatLng[] = [] 
+        for (const item of json.results){
+          coords.push({
+            latitude: item.geometry.location.lat,
+            longitude: item.geometry.location.lng,
+          })
+        }
+        setResults(json.results)
+
+        if(coords.length){
+          map.current.fitToCoordinates(coords, {
+            edgePadding: {
+              top: 50,
+              right: 50, 
+              bottom: 50,
+              left: 50,
+            },
+            animated: true
+          })
+          Keyboard.dismiss()
+        }
       }
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -58,10 +78,24 @@ export default function App() {
   return (
     <View style={styles.container}>
       <MapView
+        ref={map}
         style={styles.map}
         provider={PROVIDER_GOOGLE}
         initialRegion={INITIAL_POS}
-      />
+      >
+        {results.length ? results.map((item, i) => {
+          const coord: LatLng = {
+            latitude: item.geometry.location.lat,
+            longitude: item.geometry.location.lng,
+          }
+          return <Marker 
+                    key={`search-item-${i}`} 
+                    coordinate={coord} 
+                    title={item.name} 
+                    description=""
+                  />
+        }) : null}
+      </MapView>
       <View style={styles.searchBox}>
         <TextInput
           style={styles.input}
