@@ -21,23 +21,39 @@ export default function App() {
   const [searchText, setSearchText] = useState(''); // State to store input text
 
   const searchPlaces = async () => {
-    if(!searchText.trim().length) return; 
-
-    const googleApiURL = "https://maps.googleapi.com/maps/api/place/textsearch/json" ; 
-    
-    const input = searchText.trim() 
-    const location = `${INITIAL_LAT},${INITIAL_LNG}&radius=500`
-    const url = `${googleApiURL}?query=${input}&location=${location}$key=${GOOGLE_MAPS_API_KEY}`
-
-    try{
-      const resp = await fetch(url) ; 
-      const json = await resp.json() ; 
-      console.log(json)
-      console.log(GOOGLE_MAPS_API_KEY)
-    }catch(e){
-      console.log(e);
+    if (!searchText.trim().length) {
+      console.log("Search text is empty.");
+      return;
     }
-  }; 
+  
+    const googleApiURL = "https://maps.googleapis.com/maps/api/place/textsearch/json";
+    const input = searchText.trim();
+    const location = `${INITIAL_LAT},${INITIAL_LNG}`;
+    const url = `${googleApiURL}?query=${input}&location=${location}&radius=500&key=${GOOGLE_MAPS_API_KEY}`;
+  
+    console.log("Fetching data from:", url);
+  
+    try {
+      const response = await fetch(url);
+  
+      if (!response.ok) {
+        console.error(`HTTP error: ${response.status} - ${response.statusText}`);
+        return;
+      }
+  
+      const json = await response.json();
+      console.log("API Response:", json); // Logs the JSON data to the console
+  
+      if (json.results) {
+        console.log("Places Found:", json.results);
+      } else {
+        console.log("No results found in the response.");
+      }
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+  
 
   return (
     <View style={styles.container}>
@@ -51,6 +67,11 @@ export default function App() {
           style={styles.input}
           placeholder="Search place" // Added placeholder for clarity
           placeholderTextColor="#aaa" // Placeholder color for better UX
+          value={searchText} // Bind the state to the input value
+          onChangeText={(text) => {
+            console.log("User input:", text); // Log user input for debugging
+            setSearchText(text); // Update the state with the input
+          }}
         />
         <TouchableOpacity style={styles.buttonContainer} onPress={searchPlaces}>
           <Text style={styles.buttonText}>Search</Text>
