@@ -13,7 +13,6 @@ import UpdatesScreen from '../screens/UpdatesScreen';
 const Tab = createBottomTabNavigator();
 export default function Navigation() {
     return (
-      <NavigationContainer>
         <Tab.Navigator
         screenOptions={({ route }) => ({
             tabBarIcon: ({ focused, color, size }) => {
@@ -37,11 +36,10 @@ export default function Navigation() {
             tabBarInactiveTintColor: 'gray',
         })}
         >
-        <Tab.Screen name="Map" component={MapExplorerScreen} />
+        <Tab.Screen name="Concordia Campus Guide" component={MapExplorerScreen} />
         <Tab.Screen name="Directions" component={DirectionsScreen} />
         <Tab.Screen name="Settings" component={SettingsScreen} />
         <Tab.Screen name="Updates" component={UpdatesScreen} />
         </Tab.Navigator>
-      </NavigationContainer>
     );
 }

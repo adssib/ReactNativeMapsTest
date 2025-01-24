@@ -55,7 +55,22 @@ export default function MapExplorerScreen() {
 
   return (
     <View style={styles.container}>
-      <MapView ref={map} style={styles.map} provider={PROVIDER_GOOGLE} initialRegion={INITIAL_POS}>
+      <MapView 
+          ref={map} 
+          style={styles.map} 
+          provider={PROVIDER_GOOGLE} 
+          initialRegion={INITIAL_POS}
+          customMapStyle={[
+            {
+              featureType: 'poi',
+              elementType: 'labels',
+              stylers: [{ visibility: 'off' }],
+            },
+            {
+              featureType: 'poi.business',
+              stylers: [{ visibility: 'off' }],
+            },
+          ]}>
         {results.map((item, i) => (
           <Marker
             key={`marker-${i}`}
