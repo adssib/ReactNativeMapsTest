@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 import { Dimensions, StyleSheet, TextInput, TouchableOpacity, View, Text } from 'react-native';
+import { GOOGLE_MAPS_API_KEY } from '../constants/GoogleKey';
 
 const { width, height } = Dimensions.get("window");
 
@@ -17,6 +18,27 @@ const INITIAL_POS = {
 };
 
 export default function App() {
+  const [searchText, setSearchText] = useState(''); // State to store input text
+
+  const searchPlaces = async () => {
+    if(!searchText.trim().length) return; 
+
+    const googleApiURL = "https://maps.googleapi.com/maps/api/place/textsearch/json" ; 
+    
+    const input = searchText.trim() 
+    const location = `${INITIAL_LAT},${INITIAL_LNG}&radius=500`
+    const url = `${googleApiURL}?query=${input}&location=${location}$key=${GOOGLE_MAPS_API_KEY}`
+
+    try{
+      const resp = await fetch(url) ; 
+      const json = await resp.json() ; 
+      console.log(json)
+      console.log(GOOGLE_MAPS_API_KEY)
+    }catch(e){
+      console.log(e);
+    }
+  }; 
+
   return (
     <View style={styles.container}>
       <MapView
@@ -30,7 +52,7 @@ export default function App() {
           placeholder="Search place" // Added placeholder for clarity
           placeholderTextColor="#aaa" // Placeholder color for better UX
         />
-        <TouchableOpacity style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.buttonContainer} onPress={searchPlaces}>
           <Text style={styles.buttonText}>Search</Text>
         </TouchableOpacity>
       </View>
