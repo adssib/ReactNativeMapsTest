@@ -34,12 +34,12 @@ export default function App() {
             // onPress={() => onMarkerSelected(building)}
           />
         ))}
-          <Geojson
+          {/* <Geojson
           geojson={floorPlan}
           strokeColor="blue"
           fillColor="rgba(0, 0, 255, 0.3)" 
           strokeWidth={3} 
-        />
+        /> */}
       </MapView>
     </View>
   );
