@@ -24,7 +24,7 @@ jobs:
         run: npx jest --clearCache
 
       - name: Run Tests
-        run: jest --watchAll=false
+        run: npm test --watchAll=false
 
       - name: Post-test cleanup
         run: echo "Cleanup completed"
