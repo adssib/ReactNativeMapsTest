@@ -48,6 +48,8 @@ export default function MapExplorerScreen() {
         });
         Keyboard.dismiss();
       }
+      // setSearchText('');
+      // this needs to be discussed as it will have some reflection on the UX  
     } catch (error) {
       console.error(error);
     }
@@ -82,39 +84,27 @@ export default function MapExplorerScreen() {
           />
         ))}
       </MapView>
-      {/* <View style={styles.searchBox}>
-        <TextInput
-          style={styles.input}
-          placeholder="Search place"
-          value={searchText}
-          onChangeText={setSearchText}
-        />
-        <TouchableOpacity style={styles.button} onPress={searchPlaces}>
-          <Text style={styles.buttonText}>Search</Text>
-        </TouchableOpacity>
-      </View>
-    </View> */}
-          <View style={styles.searchBox}>
-        <View style={styles.inputContainer}>
-          <TextInput
-            style={styles.input}
-            placeholder="Search place"
-            value={searchText}
-            onChangeText={setSearchText}
-          />
-          <TouchableOpacity style={styles.searchButton} onPress={searchPlaces}>
-            <Text style={styles.searchButtonText}>Search</Text>
-          </TouchableOpacity>
+        <View style={styles.searchBox}>
+          <View style={styles.inputContainer}>
+            <TextInput
+              style={styles.input}
+              placeholder="Search place"
+              value={searchText}
+              onChangeText={setSearchText}
+            />
+            <TouchableOpacity style={styles.searchButton} onPress={searchPlaces}>
+              <Text style={styles.searchButtonText}>Search</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.actionButtons}>
+            <TouchableOpacity style={styles.button}>
+              <Text style={styles.buttonText}>SWG</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button}>
+              <Text style={styles.buttonText}>LOY</Text>
+            </TouchableOpacity>
+          </View>
         </View>
-        <View style={styles.actionButtons}>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>SWG</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>LOY</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
     </View>
   );
 }
