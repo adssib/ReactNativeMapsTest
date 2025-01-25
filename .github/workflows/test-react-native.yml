@@ -18,10 +18,10 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm ci
-
-      - name: Clear Jest cache
-        run: jest --clearCache
+        run: npm ci- 
+        
+      - name: Run Jest
+        run: npx jest --clearCache
 
       - name: Run Tests
         run: jest --watchAll=false
