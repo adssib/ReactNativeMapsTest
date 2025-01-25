@@ -38,8 +38,8 @@ export default function Navigation() {
         >
         <Tab.Screen name="Concordia Campus Guide" component={MapExplorerScreen} />
         <Tab.Screen name="Directions" component={DirectionsScreen} />
-        <Tab.Screen name="Settings" component={SettingsScreen} />
         <Tab.Screen name="Updates" component={UpdatesScreen} />
+        <Tab.Screen name="Settings" component={SettingsScreen} />
         </Tab.Navigator>
     );
 }

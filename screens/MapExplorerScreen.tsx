@@ -82,7 +82,7 @@ export default function MapExplorerScreen() {
           />
         ))}
       </MapView>
-      <View style={styles.searchBox}>
+      {/* <View style={styles.searchBox}>
         <TextInput
           style={styles.input}
           placeholder="Search place"
@@ -92,6 +92,28 @@ export default function MapExplorerScreen() {
         <TouchableOpacity style={styles.button} onPress={searchPlaces}>
           <Text style={styles.buttonText}>Search</Text>
         </TouchableOpacity>
+      </View>
+    </View> */}
+          <View style={styles.searchBox}>
+        <View style={styles.inputContainer}>
+          <TextInput
+            style={styles.input}
+            placeholder="Search place"
+            value={searchText}
+            onChangeText={setSearchText}
+          />
+          <TouchableOpacity style={styles.searchButton} onPress={searchPlaces}>
+            <Text style={styles.searchButtonText}>Search</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.actionButtons}>
+          <TouchableOpacity style={styles.button}>
+            <Text style={styles.buttonText}>SWG</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button}>
+            <Text style={styles.buttonText}>LOY</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
@@ -112,17 +134,43 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   input: {
+    flex: 1,
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 5,
-    padding: 10,
-    marginBottom: 10,
+    paddingHorizontal: 10,
+    height: 40,
   },
   button: {
+    flex: 1,
     backgroundColor: '#722F37',
     alignItems: 'center',
-    paddingVertical: 10,
+    paddingVertical: 7,
     borderRadius: 5,
+    marginHorizontal: 5,
   },
-  buttonText: { color: '#fff', fontWeight: 'bold' },
+  buttonText: { 
+    color: '#fff', 
+    fontWeight: 'bold' 
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  searchButton: {
+    backgroundColor: '#722F37',
+    borderRadius: 5,
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    marginLeft: 10,
+  },
+  searchButtonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+  },
+  actionButtons: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
 });
