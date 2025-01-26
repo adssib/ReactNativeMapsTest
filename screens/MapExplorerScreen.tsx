@@ -3,7 +3,7 @@
  */
 
 import React, { useRef, useState } from 'react';
-import MapView, { LatLng, Marker, PROVIDER_GOOGLE } from 'react-native-maps';
+import MapView, { LatLng, Marker, PROVIDER_GOOGLE, Region } from 'react-native-maps';
 import { Dimensions, StyleSheet, TextInput, TouchableOpacity, View, Text, Keyboard } from 'react-native';
 import { GOOGLE_MAPS_API_KEY } from '../constants/GoogleKey';
 
@@ -18,6 +18,20 @@ const INITIAL_POS = {
   longitude: INITIAL_LNG,
   latitudeDelta: LATITUDE_DELTA,
   longitudeDelta: LONGITUDE_DELTA,
+};
+
+const SGW_CAMPUS: Region = {
+  latitude: 45.497092,
+  longitude: -73.578800,
+  latitudeDelta: 0.01,
+  longitudeDelta: 0.01,
+};
+
+const LOY_CAMPUS: Region = {
+  latitude: 45.458705,
+  longitude: -73.640523,
+  latitudeDelta: 0.01,
+  longitudeDelta: 0.01,
 };
 
 export default function MapExplorerScreen() {
