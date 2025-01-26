@@ -20,11 +20,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
-      - name: Run Jest
-        run: npx jest --clearCache
+      - name: Install Jest
+        run: npm install jest --global
 
-      # - name: Run Tests
-      #   run: npm test --watchAll=false
-
-      - name: Post-test cleanup
-        run: echo "Cleanup completed"
+      - name: Run Tests
+        run: jest test
