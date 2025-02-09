@@ -27,6 +27,8 @@ jobs:
         # run: jest test
         run: jest --coverage
 
+      - name: List coverage files
+        run: ls -la ./coverage
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
