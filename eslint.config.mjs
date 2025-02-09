@@ -12,11 +12,11 @@ export default [
     },
     rules: {
       "@typescript-eslint/naming-convention": [
-        // "error", // an error will block the commit 
+        // "error", // an error will block the commit (using a precommit hook ofc) 
         "warn",
         {
           "selector": "default",
-          "format": ["camelCase"],
+          "format": ["camelCase", "PascalCase"],
           "leadingUnderscore": "allow",
           "trailingUnderscore": "allow"
         },
