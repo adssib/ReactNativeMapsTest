@@ -25,3 +25,11 @@ jobs:
 
       - name: Run Tests
         run: jest test
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage/lcov.info
+          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: unittests
+          fail_ci_if_error: true
