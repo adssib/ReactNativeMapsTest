@@ -24,7 +24,9 @@ jobs:
         run: npm install jest --global
 
       - name: Run Tests
-        run: jest test
+        # run: jest test
+        run: jest --coverage
+
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
